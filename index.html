@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Siswa - Rahmita Al Islah</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Poppins dari Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header & Navigasi -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Porto<span>Mita</span></div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">Tentang Saya</a></li>
+                <li><a href="#profile">Profil</a></li>
+                <li><a href="#dream">Cita-Cita</a></li>
+                <li><a href="#edit-section" class="btn-edit-nav">Edit Profil</a></li>
+            </ul>
+            <div class="nav-extra">
+                <button id="themeToggle" class="theme-btn">🌙</button>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-container">
+            <div class="hero-image">
+                <img id="display-photo" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=400" alt="Foto Profil">
+            </div>
+            <div class="hero-text">
+                <span class="badge" id="display-kelas">X DKV 2</span>
+                <h1>Halo, Saya <span id="display-nama">RAHMITA AL ISLAH</span> 👋</h1>
+                <p class="nickname">Biasa dipanggil <strong><span id="display-panggilan">MITA</span></strong></p>
+                <p class="jurusan"><span id="display-jurusan">DESAIN KOMUNIKASI VISUAL (DKV)</span> - <span id="display-konsentrasi">KONSENTRASI KEAHLIAN</span></p>
+                <blockquote class="tagline">"<span id="display-motto">MOTTO / TAGLINE</span>"</blockquote>
+                <div class="hero-buttons">
+                    <a href="#about" class="btn btn-primary">Tentang Saya</a>
+                    <a href="#profile" class="btn btn-secondary">Lihat Profil</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang Saya Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">Tentang Saya</h2>
+            <div class="card about-card">
+                <p id="display-deskripsi">
+                    DESKRIPSI DIRI: Halo! Saya adalah siswa kelas X yang bersemangat untuk belajar hal-hal baru di bidang keahlian saya. Portofolio ini adalah langkah awal perjalanan belajar saya.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profil Section -->
+    <section id="profile" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Profil & Minat</h2>
+            <div class="grid-container">
+                <div class="card">
+                    <div class="card-icon">📚</div>
+                    <h3>Pendidikan</h3>
+                    <p><strong>Kelas:</strong> <span id="display-profile-kelas">X DKV 2</span></p>
+                    <p><strong>Jurusan:</strong> <span id="display-profile-jurusan">DESAIN KOMUNIKASI VISUAL (DKV)</span></p>
+                    <p><strong>Konsentrasi:</strong> <span id="display-profile-konsentrasi">KONSENTRASI KEAHLIAN</span></p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🎨</div>
+                    <h3>Minat & Hobi</h3>
+                    <p><strong>Minat:</strong> <span id="display-minat">MINAT</span></p>
+                    <p><strong>Hobi:</strong> <span id="display-hobi">MASAK</span></p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🚀</div>
+                    <h3>Fokus Belajar</h3>
+                    <p><strong>Ingin Dipelajari:</strong></p>
+                    <p id="display-dipelajari">INGIN MENJADI PHOTOGRAPHER</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cita-Cita Section -->
+    <section id="dream" class="section">
+        <div class="container">
+            <h2 class="section-title">Cita-Cita</h2>
+            <div class="card dream-card">
+                <div class="dream-icon">🌟</div>
+                <h3>Impian Masa Depan</h3>
+                <h4 id="display-citacita">GURU</h4>
+                <p>Terus belajar dan bekerja keras untuk menggapai impian serta menginspirasi sesama!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Edit Profil Section -->
+    <section id="edit-section" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Edit Profil (Live Preview)</h2>
+            <div id="notification" class="notification hidden">Data berhasil disimpan! ✨</div>
+            <form id="profileForm" class="card form-card">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="input-nama">Nama Lengkap</label>
+                        <input type="text" id="input-nama" value="RAHMITA AL ISLAH">
+                    </div>
+                    <div class="form-group">
+                        <label for="input-panggilan">Nama Panggilan</label>
+                        <input type="text" id="input-panggilan" value="MITA">
+                    </div>
+                    <div class="form-group">
+                        <label for="input-kelas">Kelas</label>
+                        <input type="text" id="input-kelas" value="X DKV 2">
+                    </div>
+                    <div class="form-group">
+                        <label for="input-jurusan">Jurusan / Program Keahlian</label>
+                        <input type="text" id="input-jurusan" value="DESAIN KOMUNIKASI VISUAL (DKV)">
+                    </div>
+                    <div class="form-group">
+                        <label for="input-konsentrasi">Konsentrasi Keahlian</label>
+                        <input type="text" id="input-konsentrasi" value="KONSENTRASI/KOMPETENSI KEAHLIAN">
+                    </div>
+                    <div class="form-group">
+                        <label for="input-motto">Motto / Tagline</label>
+                        <input type="text" id="input-motto" value="MOTTO/TAGLINE">
+                    </div>
+                    <div class="form-group">
+                        <label for="input-minat">Minat</label>
+                        <input type="text" id="input-minat" value="MINAT">
+                    </div>
+                    <div class="form-group">
+                        <label for="input-hobi">Hobi</label>
+                        <input type="text" id="input-hobi" value="MASAK">
+                    </div>
+                    <div class="form-group">
+                        <label for="input-dipelajari">Bidang Yang Ingin Dipelajari</label>
+                        <input type="text" id="input-dipelajari" value="INGIN MENJADI PHOTOGRAPHER">
+                    </div>
+                    <div class="form-group">
+                        <label for="input-citacita">Cita-Cita</label>
+                        <input type="text" id="input-citacita" value="GURU">
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="input-photo">Unggah Foto Profil (Dari Perangkat)</label>
+                        <input type="file" id="input-photo" accept="image/*">
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="input-deskripsi">Deskripsi Diri</label>
+                        <textarea id="input-deskripsi" rows="4">DESKRIPSI DIRI: Halo! Saya adalah siswa kelas X yang bersemangat untuk belajar hal-hal baru di bidang keahlian saya.</textarea>
+                    </div>
+                </div>
+                <div class="form-buttons">
+                    <button type="button" id="btnSave" class="btn btn-primary">Simpan</button>
+                    <button type="button" id="btnReset" class="btn btn-reset">Reset</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Portofolio Siswa Kelas X SMK - Rahmita Al Islah</p>
+    </footer>
+
+    <!-- Tombol Kembali Ke Atas -->
+    <button id="backToTop" class="back-to-top">⬆</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
